@@ -19,7 +19,7 @@
                 extend: {
                     colors: {
                         primary: '#b4f461',
-                        secondary: '',
+                        secondary: '#f9f7f3',
                     },
                     fontFamily: {
                         lexend: 'Lexend',
@@ -31,10 +31,30 @@
 </head>
 
 <body class="font-lexend">
-
-    <header></header>
-    <main>
-        <h1>Donate Bangladesh</h1>
+    <header class="sticky top-0">
+       <div class="container my-0 mx-auto bg-secondary">
+        <nav class="navbar  pt-6 pb-7 items-center">
+            <div class="navbar-start">
+              <a class="btn bg-primary" href="blog.html">Blog</a>
+            </div>
+            <div class="navbar-center hidden lg:flex gap-4">
+                <img width="30px" src="./assets/logo.png" alt="Logo">
+                <span>Donate Bangladesh</span>
+            </div>
+            <div class="navbar-end gap-3">
+                <img src="./assets/coin.png" alt="Logo">
+                <span id="coin">5500<span> BDT</span></span>
+            </div>
+        </nav>
+       </div>
+          <!-- buttons -->
+           <section class="flex justify-center gap-4 pt-20 pb-8 bg-white">
+               <button id="donation" class="btn bg-primary">Donation</button>
+               <button id="history" class="btn">History</button>
+           </section>
+    </header>
+    <main class="h-svh">
+    
     </main>
     <footer></footer>
 
