@@ -10,6 +10,10 @@ function getInputFiledValueById(id){
     const filedNumber = parseFloat(filedValue);
     return filedNumber;
 }
+function getElById(id){
+    const element = document.getElementById(id);
+    return element;
+}
 // get elements text 
 function getElementTextById(id){
     const elText = document.getElementById(id).innerText;
