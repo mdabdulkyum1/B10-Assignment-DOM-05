@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
     <!-- Site Title -->
     <title>Donate Bangladesh</title>
     <!-- Tailwind css and Daisyui -->
@@ -32,15 +34,25 @@
 
 <body class="font-lexend">
     <header class="sticky top-0">
+     
         <div class="bg-secondary">
             <div class="container my-0 mx-auto bg-secondary">
                 <nav class="navbar  pt-6 pb-7 items-center">
-                    <div class="navbar-start">
+                    <div class="navbar-start hidden lg:block">
                         <a class="btn bg-primary" href="blog.html">Blog</a>
                     </div>
-                    <div class="navbar-center hidden lg:flex gap-4">
-                        <img width="30px" src="./assets/logo.png" alt="Logo">
-                        <span>Donate Bangladesh</span>
+                    <div class="navbar-start  lg:hidden relative">
+                        <i id="menu-open" class=" lg:hidden  text-2xl fa-solid fa-bars"></i>
+                        <i id="menu-close" class="hidden lg:hidden text-2xl fa-regular fa-xmark"></i>
+                        <div id="drop-menu" class="hidden absolute top-12 -left-2 z-20 bg-[#000000a4] h-[100px] w-[150px] p-6 rounded-lg lg:hidden">
+                            <a class="btn bg-primary" href="blog.html">Blog</a>
+                        </div>
+                    </div>
+                    <div class="navbar-center  lg:flex gap-4 ">
+                        <img width="30px" class="hidden lg:block" src="./assets/logo.png" alt="Logo">
+                        <span class="hidden lg:block">Donate Bangladesh</span>
+                        <img width="30px" class="lg:hidden -translate-x-14" src="./assets/logo.png" alt="Logo">
+                        <span class="block lg:hidden -translate-x-14">Donate Bd</span>
                     </div>
                     <div class="navbar-end gap-3">
                         <img src="./assets/coin.png" alt="Logo">
