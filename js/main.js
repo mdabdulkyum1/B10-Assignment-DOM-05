@@ -135,3 +135,8 @@ menuClose.addEventListener('click', function(){
     menuOpen.classList.remove('hidden');
     dropMenu.classList.add('hidden');
 })
+
+// call read more and show
+showLessHandler('read-more', 'less', 'show-content');
+showLessHandler('read-more-f', 'less-f', 'show-content-f');
+showLessHandler('read-more-q', 'less-q', 'quota-content');

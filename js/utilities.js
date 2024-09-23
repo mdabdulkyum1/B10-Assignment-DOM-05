@@ -21,4 +21,23 @@ function getElementTextById(id){
     return elTextNumber;
 }
 
-console.log("hello")
+
+// show more and less fun
+function showLessHandler(readMoreId, lessId, hideContentId ){
+    const readMore = document.getElementById(readMoreId);
+    const less = document.getElementById(lessId);
+    const hideContent = document.getElementById(hideContentId)
+
+    readMore.addEventListener('click', function(){
+        hideContent.classList.remove('hidden');
+        readMore.classList.add('hidden');
+        less.classList.remove('hidden');
+    });
+    less.addEventListener('click', function(){
+        hideContent.classList.add('hidden');
+        readMore.classList.remove('hidden');
+        less.classList.add('hidden');
+    });
+
+    // return;
+}
