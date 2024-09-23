@@ -50,8 +50,7 @@
             </div>
         </div>
         <!-- buttons -->
-        <section
-            class="flex justify-center gap-4 pt-8 pb-8 bg-[#ffffffed] backdrop-blur-lg ">
+        <section class="flex justify-center gap-4 pt-8 pb-8 bg-[#ffffffed] backdrop-blur-lg ">
             <button id="donation" class="btn bg-primary">Donation</button>
             <button id="history" class="btn">History</button>
         </section>
@@ -61,7 +60,8 @@
         <!-- 3 donation cards Starts -->
         <section class="">
             <div id="donation-posts" class="my-0 mx-auto mt-8 p-8 flex flex-col gap-8">
-                <div class="flex flex-col lg:flex-row gap-4 items-center justify-center p-4 border border-gray-200 rounded-md">
+                <div
+                    class="flex flex-col lg:flex-row gap-4 items-center justify-center p-4 border border-gray-200 rounded-md">
                     <div class=" lg:w-2/4">
                         <img class="max-w-full" src="./assets/noakhali.png" alt="Nokhali">
                     </div>
@@ -72,15 +72,17 @@
                         </div>
                         <h1 class="text-xl font-extrabold my-4">Donate for Flood at Noakhali, Bangladesh</h1>
                         <p class="my-4"> The recent floods in Noakhali have caused significant damage to homes
-                            infrastructure. Your donation will help provide essential supplies and to those affected by this
-                            disaster. Every contribution, big or small, makes difference. Please join us in supporting the
+                            infrastructure. Your donation will help provide essential supplies and to those affected by
+                            this
+                            disaster. Every contribution, big or small, makes difference. Please join us in supporting
+                            the
                             relief efforts and making a positive impact on the lives of those in need.</p>
                         <input id="donate-input-amount-n" type="text" placeholder="Write Donation Amount"
                             class="input input-bordered w-full my-2" /><br>
                         <button id="donate-btn-n" class="btn btn-block bg-primary mt-6">Donate Now</button>
                     </div>
                 </div>
-    
+
                 <div class="flex flex-col lg:flex-row gap-8 border border-gray-200 rounded-md p-4">
                     <div class="lg:w-2/4">
                         <img class="max-w-full" src="./assets/feni.png" alt="Feni">
@@ -92,15 +94,17 @@
                         </div>
                         <h1 class="text-xl font-extrabold my-4">Donate for Flood Relief in Feni,Bangladesh</h1>
                         <p class="my-4"> The recent floods in Noakhali have caused significant damage to homes
-                            infrastructure. Your donation will help provide essential supplies and to those affected by this
-                            disaster. Every contribution, big or small, makes difference. Please join us in supporting the
+                            infrastructure. Your donation will help provide essential supplies and to those affected by
+                            this
+                            disaster. Every contribution, big or small, makes difference. Please join us in supporting
+                            the
                             relief efforts and making a positive impact on the lives of those in need.</p>
                         <input id="donate-input-f" type="text" placeholder="Write Donation Amount"
                             class="input input-bordered w-full my-2" /><br>
                         <button id="donate-btn-f" class="btn btn-block bg-primary mt-6">Donate Now</button>
                     </div>
                 </div>
-    
+
                 <div class="flex flex-col lg:flex-row gap-8 border border-gray-200 rounded-md p-4">
                     <div class="lg:w-2/4">
                         <img class="max-w-full" src="./assets/quota-protest.png" alt="quota">
@@ -112,8 +116,10 @@
                         </div>
                         <h1 class="text-xl font-extrabold my-4">Aid for Injured in the Quota Movement</h1>
                         <p class="my-4"> The recent floods in Noakhali have caused significant damage to homes
-                            infrastructure. Your donation will help provide essential supplies and to those affected by this
-                            disaster. Every contribution, big or small, makes difference. Please join us in supporting the
+                            infrastructure. Your donation will help provide essential supplies and to those affected by
+                            this
+                            disaster. Every contribution, big or small, makes difference. Please join us in supporting
+                            the
                             relief efforts and making a positive impact on the lives of those in need.</p>
                         <input id="donate-input-q" type="text" placeholder="Write Donation Amount"
                             class="input input-bordered w-full my-2" /><br>
@@ -124,26 +130,41 @@
         </section>
         <!-- 3 donation cards ends -->
         <!-- history sections Start -->
-        <section class="">
+        <section id="history-section" class="hidden">
             <div id="donate-history" class="flex flex-col gap-5 justify-center items-center py-10 lg:px-28">
                 <div class="border border-gray-200 rounded-lg p-8">
-                    <h3 class="text-2xl font-extrabold my-3">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h3>
+                    <h3 class="text-2xl font-extrabold my-3">96500 Taka is Donated for famine-2024 at Feni, Bangladesh
+                    </h3>
                     <p>Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
                 </div>
                 <div class="border border-gray-200 rounded-lg p-8">
-                    <h3 class="text-2xl font-extrabold my-3">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h3>
+                    <h3 class="text-2xl font-extrabold my-3">96500 Taka is Donated for famine-2024 at Feni, Bangladesh
+                    </h3>
                     <p>Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
                 </div>
                 <div class="border border-gray-200 rounded-lg p-8">
-                    <h3 class="text-2xl font-extrabold my-3">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h3>
+                    <h3 class="text-2xl font-extrabold my-3">96500 Taka is Donated for famine-2024 at Feni, Bangladesh
+                    </h3>
                     <p>Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</p>
                 </div>
             </div>
         </section>
-
+        <!-- Pop Up or modal -->
+        <section id="modal" class="hidden">
+            <div class="h-screen w-[100%] bg-[#0909097a] absolute top-0 flex justify-center items-center ">
+                <div class=" bg-white px-12 py-5 flex justify-center items-center flex-col gap-4 rounded-lg shadow-lg">
+                    <h1 class="text-3xl font-extrabold">Congrates!</h1>
+                    <img src="./assets/coin.png" alt="">
+                    <p>You Have Donated for Humankind</p>
+                    <h2 class="text-xl font-semibold">Successfully</h2>
+                    <button class="btn bg-primary">close confirmation</button>
+                </div>
+            </div>
+        </section>
 
     </main>
-    <footer></footer>
+    <footer>
+    </footer>
 
 
     <script src="./js/utilities.js"></script>
