@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+    <!-- Site Title -->
+    <title>Donate Bangladesh</title>
+    <!-- Tailwind css and Daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#b4f461',
+                        secondary: '#f9f7f3',
+                    },
+                    fontFamily: {
+                        lexend: 'Lexend',
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="font-lexend">
+    <header class="sticky top-0">
+
+        <div class="bg-secondary">
+            <div class="container my-0 mx-auto bg-secondary">
+                <nav class="navbar  pt-6 pb-7 items-center">
+                    <div class="navbar-start hidden lg:block">
+                        <a class="btn bg-primary" href="index.html">Home</a>
+                    </div>
+                    <div class="navbar-start  lg:hidden relative">
+                        <i id="menu-open" class=" lg:hidden  text-2xl fa-solid fa-bars"></i>
+                        <i id="menu-close" class="hidden lg:hidden text-2xl fa-regular fa-xmark"></i>
+                        <div id="drop-menu"
+                            class="hidden absolute top-12 -left-2 z-20 bg-[#000000a4] h-[100px] w-[150px] p-6 rounded-lg lg:hidden">
+                            <a class="btn bg-primary" href="index.html">Home</a>
+                        </div>
+                    </div>
+                    <div class="navbar-center  lg:flex gap-4 ">
+                        <img width="30px" class="hidden lg:block" src="./assets/logo.png" alt="Logo">
+                        <span class="hidden lg:block">Donate Bangladesh</span>
+                        <img width="30px" class="lg:hidden -translate-x-14" src="./assets/logo.png" alt="Logo">
+                        <span class="block lg:hidden -translate-x-14">Donate Bd</span>
+                    </div>
+                    <div class="navbar-end gap-3">
+                        <img src="./assets/coin.png" alt="Logo">
+                        <span id="account-balance">5500</span><span> BDT</span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+            <section>
+                <h1>Important FAQ ?</h1>
+            </section>
+    </main>
+    <footer></footer>
+
+    <script src="./js/blog.js"></script>
+</body>
+
+</html>

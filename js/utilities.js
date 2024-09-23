@@ -20,3 +20,5 @@ function getElementTextById(id){
     const elTextNumber = parseFloat(elText);
     return elTextNumber;
 }
+
+console.log("hello")
