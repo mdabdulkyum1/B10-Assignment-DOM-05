@@ -33,7 +33,7 @@
 </head>
 
 <body class="font-lexend">
-    <header class="sticky top-0">
+    <header class="sticky top-0 z-10">
 
         <div class="bg-secondary">
             <div class="container my-0 mx-auto bg-secondary">
@@ -64,22 +64,28 @@
         </div>
     </header>
 
-    <main>
-        <section class="px-7 mt-7 relative -z-10">
+    <main class="">
+        <section class="px-7 mt-7 ">
             <h1 class="text-2xl font-extrabold">Important FAQ ?</h1>
           <div class="mt-5 flex flex-col gap-4">
             <div class="collapse collapse-arrow bg-base-200">
                 <input type="radio" name="my-accordion-2" checked="checked" />
                 <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
                 <div class="collapse-content">
-                    <p>hello</p>
+                    <p class="lg:w-9/12">DOM = D = Document. O = Object. M = Model. DOM is the data represent objects and the 
+                    structure on web pages. Its represent HTML and XML Document as like tree structure.Documents are arranged in a tree. Document has some methods which the document structure, style, and content can be changed using the programming language JavaScript.
+                    </p>
                 </div>
             </div>
             <div class="collapse collapse-arrow bg-base-200">
                 <input type="radio" name="my-accordion-2" />
                 <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
                 <div class="collapse-content">
-                    <p>hello</p>
+                    <p>There are many ways to select elements of DOM like id Selector, class Selector, 
+                        and tag name Selector etc. <br>
+                        example: I have an id, or class, = "myName"  <br>
+                        id selector = document.getElementById('myName'); <br>
+                        class selector = document.getElementByClassName('myName');</p>
                 </div>
             </div>
             <div class="collapse collapse-arrow bg-base-200">
@@ -87,14 +93,18 @@
                 <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and
                     why is it useful?</div>
                 <div class="collapse-content">
-                    <p>hello</p>
+                    <p>Event delegation refers to using event propagation (bubbling) to handle events. </p>
                 </div>
             </div>
             <div class="collapse collapse-arrow bg-base-200">
                 <input type="radio" name="my-accordion-2" />
                 <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
                 <div class="collapse-content">
-                    <p>hello</p>
+                    <p>I have almost two ways to change elements attributed and style like <br>
+                        classList and setAttribute() method. <br>
+                        classList object change only elements class. </br>
+                        other attributes like id, href, src etc ... use to setAttribute() method. <br>
+                        setAttribute() method can receive two arguments first attribute name second value.</p>
                 </div>
             </div>
           </div>
