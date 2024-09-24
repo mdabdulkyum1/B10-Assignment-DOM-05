@@ -41,3 +41,40 @@ function showLessHandler(readMoreId, lessId, hideContentId ){
 
     // return;
 }
+
+
+// main cards functions for multiple uses...
+function cardsHandler(buttonId, donateAmountId, donatedAmountId, infoId) {
+    document.getElementById(buttonId).addEventListener('click', function () {
+        const donateAmount = document.getElementById(donateAmountId);
+        const donatedAmount = document.getElementById(donatedAmountId);
+        const accountBalance = document.getElementById('account-balance');
+        const donateHistory = document.getElementById('donate-history');
+
+        const totalDonateAmount = parseFloat(donatedAmount.innerText) + parseFloat(donateAmount.value)
+        const newAccountBalance = parseFloat(accountBalance.innerText) - parseFloat(donateAmount.value)
+
+        // set conditions
+        const checkValidInput = isNaN(parseFloat(donateAmount.value)) || donateAmount.value <= 0 || donateAmount.value > parseFloat(accountBalance.innerText);
+        if (checkValidInput) {
+            alert(" invalid Donation amount");
+        } else {
+            // update data 
+            donatedAmount.innerText = totalDonateAmount;
+            accountBalance.innerText = newAccountBalance;
+            // get data 
+            const info = document.getElementById(infoId).innerText;
+            donateHistory.innerHTML += `
+                <div class="border border-gray-200 rounded-lg p-8">
+                    <h3 class="text-2xl font-extrabold my-3">${donateAmount.value} Taka is ${info}</h3>
+                    <p>${nowTime()}</p>
+                </div>
+                `;
+            // modal open 
+            document.getElementById('modal').classList.remove('hidden');
+
+        }
+        donateAmount.value = "";
+    })
+
+}

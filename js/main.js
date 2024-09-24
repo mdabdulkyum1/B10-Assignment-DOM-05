@@ -140,3 +140,11 @@ menuClose.addEventListener('click', function(){
 showLessHandler('read-more', 'less', 'show-content');
 showLessHandler('read-more-f', 'less-f', 'show-content-f');
 showLessHandler('read-more-q', 'less-q', 'quota-content');
+showLessHandler('read1', 'less1', 'content1');
+
+
+// call cards 
+cardsHandler('donate-btn1', 'donate-amount1', 'donated-amount1', 'info1');
+
+
+

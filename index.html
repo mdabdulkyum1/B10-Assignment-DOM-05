@@ -72,11 +72,11 @@
     <main class="">
         <!-- 3 donation cards Starts -->
         <section id="donation-cards" class="">
-            <div class="my-0 mx-auto mt-8 p-8 flex flex-col gap-8">
-                <div
-                    class="flex flex-col lg:flex-row gap-4 items-center justify-center p-4 border border-gray-200 rounded-md">
+            <div class="container  my-0 mx-auto mt-8 p-8 flex flex-col gap-8">
+                <!-- card 1 -->
+                <div class="flex flex-col lg:flex-row gap-8 items-center justify-center p-4 border border-gray-200 rounded-md">
                     <div class=" lg:w-2/4">
-                        <img class="max-w-full" src="./assets/noakhali.png" alt="Nokhali">
+                        <img class="w-full" src="./assets/noakhali.png" alt="Nokhali">
                     </div>
                     <div class=" lg:w-2/4">
                         <div class="btn">
@@ -85,7 +85,7 @@
                         </div>
                         <h1 id="info-n" class="text-xl font-extrabold my-4">Donate for Flood at Noakhali, Bangladesh
                         </h1>
-                        <p class="my-4"> The recent floods in Noakhali have caused significant damage to homes<span
+                        <p class="my-4 text-justify"> The recent floods in Noakhali have caused significant damage to homes<span
                                 class="hidden lg:block">infrastructure. Your donation will help provide essential supplies and
                                 to those affected by
                                 this disaster. Every contribution, big or small, makes difference. Please join us in
@@ -107,7 +107,7 @@
                 <!-- card 2 -->
                 <div class="flex flex-col lg:flex-row gap-8 border border-gray-200 rounded-md p-4">
                     <div class="lg:w-2/4">
-                        <img class="max-w-full" src="./assets/feni.png" alt="Feni">
+                        <img class="w-full" src="./assets/feni.png" alt="Feni">
                     </div>
                     <div class="lg:w-2/4">
                         <div class="btn">
@@ -116,17 +116,9 @@
                         </div>
                         <h1 id="info-f" class="text-xl font-extrabold my-4">Donate for Flood Relief in Feni,Bangladesh
                         </h1>
-                        <p class="my-4"> The recent floods in Noakhali have caused significant damage to homes<span
-                            class="hidden lg:block">infrastructure. Your donation will help provide essential supplies and
-                            to those affected by
-                            this disaster. Every contribution, big or small, makes difference. Please join us in
-                            supporting
-                            the relief efforts and making a positive impact on the lives of those in need.</span>
-                        <span id="show-content-f" class="hidden lg:hidden">infrastructure. Your donation will help provide essential supplies and to
-                            those affected by
-                            this disaster. Every contribution, big or small, makes difference. Please join us in
-                            supporting
-                            the relief efforts and making a positive impact on the lives of those in need.</span>
+                        <p class="my-4"> Donate to support those affected by the floods in Feni, Bangladesh. Many homes 
+                            <span class="hidden lg:block">and roads have been damaged, and people need food, clean water, and shelter. Your donation will help provide essential supplies and relief to those in need. Every contribution matters and will help families recover and rebuild their lives.</span>
+                        <span id="show-content-f" class="hidden lg:hidden">and roads have been damaged, and people need food, clean water, and shelter. Your donation will help provide essential supplies and relief to those in need. Every contribution matters and will help families recover and rebuild their lives.</span>
                         <p id="read-more-f" class=" lg:hidden font-bold" >Read more</p>
                         <p id="less-f" class="hidden lg:hidden font-bold">Less</p>
                     </p>
@@ -138,7 +130,7 @@
                 <!-- card 3 -->
                 <div class="flex flex-col lg:flex-row gap-8 border border-gray-200 rounded-md p-4">
                     <div class="lg:w-2/4">
-                        <img class="max-w-full" src="./assets/quota-protest.png" alt="quota">
+                        <img class="w-full" src="./assets/quota-protest.png" alt="quota">
                     </div>
                     <div class="lg:w-2/4">
                         <div class="btn">
@@ -146,23 +138,38 @@
                             <span id="donate-amount-q">7500</span><span>BDT</span>
                         </div>
                         <h1 id="info-q" class="text-xl font-extrabold my-4">Aid for Injured in the Quota Movement</h1>
-                        <p class="my-4"> The recent floods in Noakhali have caused significant damage to homes<span
-                            class="hidden lg:block">infrastructure. Your donation will help provide essential supplies and
-                            to those affected by
-                            this disaster. Every contribution, big or small, makes difference. Please join us in
-                            supporting
-                            the relief efforts and making a positive impact on the lives of those in need.</span>
-                        <span id="quota-content" class="hidden lg:hidden">infrastructure. Your donation will help provide essential supplies and to
-                            those affected by
-                            this disaster. Every contribution, big or small, makes difference. Please join us in
-                            supporting
-                            the relief efforts and making a positive impact on the lives of those in need.</span>
+                        <p class="my-4">
+                            Donate to help those injured in the Quota Movement. Many people were hurt during <span
+                            class="hidden lg:block">the protests and need medical care and support. Your donation will provide essential treatment and aid for their recovery. Every contribution makes a difference and will help those affected rebuild their lives and health.</span>
+                        <span id="quota-content" class="hidden lg:hidden">the protests and need medical care and support. Your donation will provide essential treatment and aid for their recovery. Every contribution makes a difference and will help those affected rebuild their lives and health.</span>
                         <p id="read-more-q" class=" lg:hidden font-bold" >Read more</p>
                         <p id="less-q" class="hidden lg:hidden font-bold">Less</p>
                     </p>
                         <input id="donate-input-q" type="text" placeholder="Write Donation Amount"
                             class="input input-bordered w-full my-2" /><br>
                         <button id="donate-btn-q" class="btn btn-block bg-primary mt-6">Donate Now</button>
+                    </div>
+                </div>
+                <!-- new cards here -->
+                 <!-- new card 1 -->
+                <div class="flex flex-col lg:flex-row gap-8 border border-gray-200 rounded-md p-4">
+                    <div class="lg:w-2/4">
+                        <img class="w-full rounded-lg" src="./assets/cyclon.jpeg" alt="cyclone">
+                    </div>
+                    <div class="lg:w-2/4">
+                        <div class="btn">
+                            <img src="./assets/coin.png" alt="Logo">
+                            <span id="donated-amount1">500</span><span>BDT</span>
+                        </div>
+                        <h1 id="info1" class="text-xl font-extrabold my-4">Donate for Cyclone Recovery in Barisal, Bangladesh</h1>
+                        <p class="my-4">Cyclone-hit communities in Barisal are struggling to rebuild their lives after the devastation. <span class="hidden lg:block">Homes have been destroyed, and access to clean water and food is scarce. Your donation can provide urgent relief, such as temporary shelters, clean water, and emergency food supplies. Join us in making a meaningful difference to the affected families.</span>
+                        <span id="content1" class="hidden lg:hidden">Homes have been destroyed, and access to clean water and food is scarce. Your donation can provide urgent relief, such as temporary shelters, clean water, and emergency food supplies. Join us in making a meaningful difference to the affected families.</span>
+                        <p id="read1" class=" lg:hidden font-bold" >Read more</p>
+                        <p id="less1" class="hidden lg:hidden font-bold">Less</p>
+                    </p>
+                        <input id="donate-amount1" type="text" placeholder="Write Donation Amount"
+                            class="input input-bordered w-full my-2" /><br>
+                        <button id="donate-btn1" class="btn btn-block bg-primary mt-6">Donate Now</button>
                     </div>
                 </div>
             </div>
