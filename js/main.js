@@ -141,10 +141,9 @@ showLessHandler('read-more', 'less', 'show-content');
 showLessHandler('read-more-f', 'less-f', 'show-content-f');
 showLessHandler('read-more-q', 'less-q', 'quota-content');
 showLessHandler('read1', 'less1', 'content1');
+showLessHandler('read2', 'less2', 'content2');
 
 
 // call cards 
 cardsHandler('donate-btn1', 'donate-amount1', 'donated-amount1', 'info1');
-
-
-
+cardsHandler('donate-btn2', 'donate-amount2', 'donated-amount2', 'info2');
