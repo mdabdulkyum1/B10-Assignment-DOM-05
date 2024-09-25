@@ -57,6 +57,10 @@ function cardsHandler(buttonId, donateAmountId, donatedAmountId, infoId) {
         // set conditions
         const checkValidInput = isNaN(parseFloat(donateAmount.value)) || donateAmount.value <= 0 || donateAmount.value > parseFloat(accountBalance.innerText);
         if (checkValidInput) {
+            if(donateAmount.value > parseFloat(accountBalance.innerText)){
+                alert("inefficient Balance!")
+                return;
+            }
             alert(" invalid Donation amount");
         } else {
             // update data 
